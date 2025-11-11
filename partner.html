@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Programs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #002244, #001122);
+      color: white;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      margin: 0;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+
+    .header p {
+      max-width: 700px;
+      margin: 10px auto;
+      color: #d0d0d0;
+      line-height: 1.5;
+    }
+
+    .header a {
+      color: #99ccff;
+      font-style: italic;
+      text-decoration: none;
+      border-bottom: 1px solid #99ccff;
+    }
+
+    .program-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px 40px 60px;
+    }
+
+    .program-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      width: 250px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .program-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .program-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .program-card .content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .program-card h3 {
+      margin: 10px 0 5px;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .program-card p {
+      margin: 6px 0;
+      color: #cccccc;
+      font-size: 14px;
+    }
+
+    .program-card .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    .program-card button {
+      background-color: #0044cc;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .program-card button:hover {
+      background-color: #0066ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>RADIO</h1>
+    <p>
+      Welcome to <strong>Radio XY</strong> — broadcasting the best shows from around the world. 
+      Tune in for music, stories, and exclusive programs for every mood and time of day. 
+      Discover your next favorite broadcast below or visit 
+      <a href="#">our website</a> for more.
+    </p>
+  </div>
+
+  <div class="program-container">
+    <div class="program-card">
+      <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980" alt="Morning Show">
+      <div class="content">
+        <h3>Morning Vibes</h3>
+        <p>Start your day with energy and great tunes.</p>
+        <p><strong>09:00 - 12:00</strong></p>
+        <p>India • 2025-11-29</p>
+        <p class="price">₹10,000 ≈ $112.68 USD</p>
+        <button>ORDER</button>
+      </div>
+    </div>
+
+    <div class="program-card">
+      <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312" alt="Art Show">
+      <div class="content">
+        <h3>Creative Waves</h3>
+        <p>Explore art, culture, and inspiring stories.</p>
+        <p><strong>09:00 - 12:00</strong></p>
+        <p>India • 2025-11-27</p>
+        <p class="price">₹10,000 ≈ $112.68 USD</p>
+        <button>ORDER</button>
+      </div>
+    </div>
+
+    <div class="program-card">
+      <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Music Show">
+      <div class="content">
+        <h3>Soundscapes</h3>
+        <p>Unwind with the best instrumental music.</p>
+        <p><strong>09:00 - 12:00</strong></p>
+        <p>India • 2025-11-26</p>
+        <p class="price">₹10,000 ≈ $112.68 USD</p>
+        <button>ORDER</button>
+      </div>
+    </div>
+
+    <div class="program-card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Evening Talk">
+      <div class="content">
+        <h3>Evening Talk</h3>
+        <p>Conversations with artists and dreamers.</p>
+        <p><strong>18:00 - 21:00</strong></p>
+        <p>India • 2025-11-25</p>
+        <p class="price">₹10,000 ≈ $112.68 USD</p>
+        <button>ORDER</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
